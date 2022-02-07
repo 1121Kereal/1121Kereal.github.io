@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>个人收藏</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./picture/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!--End-->
+    <script>
+    fetch('https://v1.hitokoto.cn')
+        .then(function (res){
+        return res.json();
+        })
+        .then(function (data) {
+        var hitokoto = document.getElementById('hitokoto');
+        hitokoto.innerText = data.hitokoto;
+        })
+        .catch(function (err) {
+        console.error(err);
+        })
+    </script>
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+<br/>
+<br/>
+<br/>
+<div id="menu-container">
+	<div id="menu-1" class="homepage home-section container">
+		<div class="home-intro text-center">
+			<h2 class="welcome-title animated fadeInLeft">我的收藏<p>My Collection.</p></h2>
+            <div style="border-bottom: 2px solid #46494f;"></div>
+
+<div class="projects-header">
+    <h3 class="animated fadeInRight">随笔·笔记</h3>
+            <h3 class="animated fadeInRight">Essay Note</h3><br /><br/>
+           <p class="animated fadeInLeft">
+                你的潜意识正在操控你的人生，而你却称其为命运<br/>当什么时候你不再将“命运”作为自我设限的挡箭牌时<br/>
+                这才是你改变命运的开始<br/>——————荣格<br/><br/>
+            </p>
+            <p class="animated fadeInLeft">
+                人不应该是插在花瓶里供人欣赏的静物<br/>而是蔓延在草原上随风起舞的旋律<br/>——————弗吉尼亚·伍尔芙<br/><br/>
+            </p>
+            <p class="animated fadeInLeft">
+                人们可以在伟大、恐惧和美丽之前闭上眼睛<br/>对于优美旋律或迷惑人的话可以充耳不闻<br/>但是他们不能摆脱气味<br/>
+                气味深入到人们心中，径直心脏<br/>在那里把爱慕和鄙视、厌恶和兴致、爱和恨区别开来<br/>——————帕·聚斯金德<br/><br/>
+            </p>
+            <p class="animated fadeInLeft">
+                不劳而获，实际上是放弃<br/>骨子里其实是不自信，慢慢会蜕化为一只<br/>活生生的寄生虫<br/>
+                在放任自我中 不断萎缩……<br/><br/>
+            </p>
+
+        </div>
+        <div class="projects-holder">
+            <h2>Friendships·Life</h2><br/>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/1.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip" >和璐璐</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/2.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip" >零碎</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                    <div class="project-item">
+                        <img src="picture/3.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip" >和蔓蔓</a></h4>
+                        </div>
+                    </div>
+                </div>
+                                
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                    <div class="project-item animated umScaleIn">
+                        <img src="picture/4.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">中学时代</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                    <div class="project-item animated umScaleIn">
+                        <img src="picture/5.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">和大学室友</a></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                    <div class="project-item animated umScaleIn">
+                        <img src="picture/6.jpg" alt="">
+                        <div class="overlay">
+                            <h4><a href="#" class="tooltip-test" data-toggle="tooltip">My Love</a></h4>
+                        </div>
+                    </div>
+                </div>
+               
+                </div>
+            </div>
+
+        </div>
+
+        <div style="border-bottom: 2px solid #46494f;"></div> <br />
+        <footer>
+<div class="blog-header text-center">
+	<div class="row">
+		<div class="col-md-12 copyright">
+            <p><a href="../index.html">回到首页</a></p>
+			<p>Copyright &copy; 2022&nbsp;&nbsp;Company By&nbsp;&nbsp;<a href="">Alkaid许</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+		</div>
+	</div>
+</div>
+</footer>
+<!-- templatemo 421 raleway -->
+<span class="border-top"></span>
+<span class="border-left"></span>
+<span class="border-right"></span>
+<span class="border-bottom"></span>
+    <!-- 网易云音乐 -->
+    <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0 src="//music.163.com/outchain/player?type=0&id=4950890732&auto=1&height=0"></embed>
+</body>
+</html>

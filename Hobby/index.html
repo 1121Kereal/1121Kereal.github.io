@@ -1,0 +1,112 @@
+ <!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>个人爱好</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/templatemo_style.css">
+    <link rel="icon" href="./picture/favicon.ico">
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--End-->
+    <script>
+        fetch('https://v1.hitokoto.cn')
+            .then(function (res) {
+                return res.json();
+            })
+            .then(function (data) {
+                var hitokoto = document.getElementById('hitokoto');
+                hitokoto.innerText = data.hitokoto;
+            })
+            .catch(function (err) {
+                console.error(err);
+            })
+    </script>
+
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+    <!--这里是上方的留白，万一以后想加个导航什么的呢。。。。-->
+    <header class="site-header container animated fadeInDown">
+        <div class="header-wrapper"></div>
+    </header>
+
+    <div id="menu-container">
+        <div id="menu-1" class="homepage home-section container">
+            <div class="home-intro text-center">
+                <h2 class="welcome-title animated fadeInLeft">Alkaid许<p>Tomorrow is a new day.<br />明天，是崭新的一天</p>
+                    <br/><p>Some for nothing is a parasite</p>不劳而获 腐朽在寄生虫的躯壳里……<br/>
+                </h2>
+                <p class="animated fadeInRight"><h3>干一行 行一行 一行行 行行行</h3><br /></p>
+            </div>
+            <div style="background-image: '../img/me.png';"></div>
+            <br /><br />
+            <div class="projects-header">
+                <h3 class="animated fadeInRight">我的爱好</h3>
+                <h3 class="animated fadeInRight">My hobby</h3><br /><br />
+                <p class="animated fadeInLeft">我永远愿意尝试新事物，所有对我而言新奇的事情都有可能成为我的新爱好<br />
+                     永不为自己设限<br />喜爱大海 爱捡贝壳 心系星系 多才多艺 古灵精怪 真诚热烈 嗜甜自律美少女<br/>
+                    天外有天 山外有山 人外有人<br />命运掌握在自己手中<br/>
+                    我愿意在计算机的道路上，越走越远。<br />
+                </p>
+            </div>
+            <div class="projects-holder">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 p-1 animated umScaleIn">
+                        <div class="project-item">
+                            <img src="picture/1.jpg" alt="">
+                            <div class="overlay">
+                                <h4><a href="#" class="tooltip-test" data-toggle="tooltip">小王子</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 p-2 animated umScaleIn">
+                        <div class="project-item">
+                            <img src="picture/2.jpg" alt="">
+                            <div class="overlay">
+                                <h4><a href="#" class="tooltip-test" data-toggle="tooltip">小王子</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 p-3 animated umScaleIn">
+                        <div class="project-item">
+                            <img src="picture/3.jpg" alt="">
+                            <div class="overlay">
+                                <h4><a href="#" class="tooltip-test" data-toggle="tooltip">小王子</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div style="border-bottom: 2px solid #46494f;"></div> <br />
+            <footer>
+                <div class="blog-header text-center">
+                    <div class="row">
+                        <div class="col-md-12 copyright">
+                            <p><a href="../index.html">回到首页</a></p>
+                            <p>Copyright &copy; 2022&nbsp;&nbsp;<a href="">Alkaid许</a>&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- templatemo 421 raleway -->
+            <span class="border-top"></span>
+            <span class="border-left"></span>
+            <span class="border-right"></span>
+            <span class="border-bottom"></span>
+            <!-- 网易云音乐 -->
+            <embed frameborder="no" border="0" marginwidth="0" marginheight="0" width=0 height=0
+                src="//music.163.com/outchain/player?type=0&id=4950890732&auto=1&height=0"></embed>
+</body>
+
+</html>
